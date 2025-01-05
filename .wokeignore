@@ -1,0 +1,21 @@
+# Dependencies and locks #
+##########################
+vendor/
+target/
+node_modules/
+.node_modules/
+*.lock
+package-lock.json
+Packages/
+Package.pins
+Package.resolved
+
+# Test and debug output #
+#########################
+htmlcov/
+.coverage
+.coverage.*
+.cache
+coverage.xml
+.hypothesis/
+.pytest_cache/
