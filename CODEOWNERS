@@ -18,3 +18,5 @@ CHANGELOG.md             @vpayno
 dictionary.dic           @vpayno
 .woke.yaml               @vpayno
 .wokeignore              @vpayno
+.yamlfix.yaml            @vpayno
+.yamllint.yaml           @vpayno
