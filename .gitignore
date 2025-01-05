@@ -1,0 +1,10 @@
+# .gitignore
+*~
+*bak
+
+# dev-containers
+/.devcontainer/scripts/data.tmp
+
+# devbox
+/.devbox/
+/.venv/
