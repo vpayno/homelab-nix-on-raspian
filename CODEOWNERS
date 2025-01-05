@@ -13,3 +13,6 @@ CHANGELOG.md             @vpayno
 # tool configuration files
 .gitignore               @vpayno
 .markdownlint.yml        @vpayno
+.dict-custom.txt         @vpayno
+.pyspelling.yml          @vpayno
+dictionary.dic           @vpayno
