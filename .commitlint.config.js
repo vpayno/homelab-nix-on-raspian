@@ -29,6 +29,7 @@ module.exports = {
                 'docs',
                 'feat',
                 'fix',
+                'nix',
                 'perf',
                 'refactor',
                 'release',
