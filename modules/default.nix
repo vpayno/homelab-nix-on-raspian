@@ -5,7 +5,7 @@
   ...
 }: {
   imports = [
-    ./modules/packages-rust.nix
+    ./packages-rust.nix
   ];
 
   config = {
