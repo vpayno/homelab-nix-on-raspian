@@ -4,14 +4,14 @@
   pkgs,
   ...
 }: {
+  imports = [
+    ./modules/packages-rust.nix
+  ];
+
   config = {
     nixpkgs.hostPlatform = "aarch64-linux";
 
     system-manager.allowAnyDistro = true;
-
-    imports = [
-      ./modules/packages-rust.nix
-    ];
 
     environment = {
       etc = {
