@@ -1,5 +1,10 @@
 # modules/packages-rust.nix
-{pkgs, ...}: {
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
   config = {
     environment = {
       etc = {
