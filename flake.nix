@@ -18,25 +18,7 @@
     systemConfigs.default = system-manager.lib.makeSystemConfig {
       modules = [
         ./modules/default.nix
-        ./modules/packages-rust.nix
       ];
-
-      config = {
-        nixpkgs.hostPlatform = "aarch64-linux";
-
-        system-manager.allowAnyDistro = true;
-
-        environment = {
-          etc = {
-          };
-
-          systemPackages = with nixpkgs; [
-          ];
-        };
-
-        systemd.services = {
-        };
-      };
     };
   };
 }
