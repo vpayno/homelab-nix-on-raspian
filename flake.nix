@@ -8,20 +8,18 @@
     };
   };
 
-  outputs =
-    {
-      self,
-      flake-utils,
-      nixpkgs,
-      system-manager,
-    }:
-    {
-      formatter.aarch64-linux = nixpkgs.legacyPackages.aarch64-linux.nixfmt-rfc-style;
+  outputs = {
+    self,
+    nixpkgs,
+    system-manager,
+  }: {
+    formatter.aarch64-linux = nixpkgs.legacyPackages.aarch64-linux.nixfmt-rfc-style;
 
-      systemConfigs.default = system-manager.lib.makeSystemConfig {
-        modules = [
-          ./modules
-        ];
-      };
+    systemConfigs.default = system-manager.lib.makeSystemConfig {
+      modules = [
+        ./modules/default.nix
+        ./modules/packages-rust.nix
+      ];
     };
+  };
 }

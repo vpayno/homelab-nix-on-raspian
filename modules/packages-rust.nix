@@ -1,14 +1,6 @@
-{
-  config,
-  lib,
-  pkgs,
-  ...
-}: {
+# modules/packages-rust.nix
+{pkgs, ...}: {
   config = {
-    nixpkgs.hostPlatform = "aarch64-linux";
-
-    system-manager.allowAnyDistro = true;
-
     environment = {
       etc = {
         "profile.d/rust.sh".text = ''
